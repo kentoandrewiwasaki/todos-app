@@ -11,6 +11,6 @@ class TodosSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Todo::class, 10)->create();  //TodoFactory.phpにて設定したテストデータを10個createする
     }
 }
