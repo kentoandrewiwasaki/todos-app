@@ -83,4 +83,19 @@ class TodosController extends Controller
         session()->flash('success', 'Todo deleted successfully.');
         return redirect('/todos');
     }
+
+    public function complete($todoId)
+
+    {
+        $data = request()->all(); //フォームからRequestオブジェクト（データ）を取得
+
+        $todo = Todo::find($todoId);
+        $todo->completed = $data['completed'];
+
+        $todo->save();
+
+        session()->flash('success', 'Todo completed successfully.');
+
+        return redirect('/todos');
+    }
 }
