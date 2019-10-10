@@ -37,7 +37,7 @@
               <textarea name="description" placeholder="decription" cols="5" rows="5" class="form-control">{{ $todo->description }}</textarea>
             </div>
             <div class="form-group text-center">
-              <button type="submit" class="btn btn-success">Edit</button>
+              <button type="submit" class="btn btn-success">Update</button>
             </div>
           </form>          
         </div>

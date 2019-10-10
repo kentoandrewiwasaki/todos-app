@@ -29,6 +29,12 @@
       </div>
     </nav>
 
+    @if(session()->has('success'))
+      <div class="alert alert-success text-center">
+        {{ session()->get('success') }}
+      </div>
+    @endif
+
     <div class="container">
       @yield('content')
     </div>
