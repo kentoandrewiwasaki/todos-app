@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-  Single Todo {{ $todo->name }}
+  Create todos
 @endsection
 
 @section('content')
