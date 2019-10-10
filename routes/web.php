@@ -21,9 +21,9 @@ Route::get('todos', 'TodosController@index');
 
 Route::get('todos/{todo}', 'TodosController@show');
 
-Route::get('new-todos', 'TodosController@create');
+Route::get('new-todos', 'TodosController@new');
 
-Route::post('post-todos', 'TodosController@post');
+Route::post('create-todos', 'TodosController@create');
 
 Route::get('todos/{todo}/edit', 'TodosController@edit');
 

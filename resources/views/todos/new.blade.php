@@ -28,7 +28,7 @@
               </ul>
             </div>
           @endif
-          <form action="/post-todos" method="POST">
+          <form action="/create-todos" method="POST">
             @csrf
             <div class="form-group">
               <input type="text" class="form-control" placeholder="name" name="name">
